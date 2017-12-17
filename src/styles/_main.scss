@@ -1,0 +1,93 @@
+.square-container {
+  width: 100vmin;
+  height: 100vmin;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+
+  &.flex-xy-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.text-center {
+  text-align: center;
+}
+
+$tile-size: 18;
+$arrow-size: 5;
+
+.board {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // width: 100%;
+  flex-grow: 1;
+  align-self: stretch;
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .arrow-row {
+    flex-grow: $arrow-size;
+    flex-basis: #{$arrow-size}vmin;
+  }
+
+  .tiles-row {
+    flex-grow: $tile-size;
+    flex-basis: #{$tile-size}vmin;
+  }
+
+  .arrow-vertical,
+  .arrow-horizontal,
+  .arrow-empty-space,
+  .tile {
+    display: flex;
+    padding: 3px;
+    flex-basis: 0;
+  }
+
+  .arrow-empty-space,
+  .arrow-horizontal {
+    flex-grow: $arrow-size;
+    flex-basis: #{$arrow-size}vmin;
+  }
+
+  .arrow-vertical,
+  .tile {
+    flex-grow: $tile-size;
+    flex-basis: #{$tile-size}vmin;
+  }
+
+  @media screen and (max-width: $grid-medium-breakpoint) {
+    .arrow-row,
+    .arrow-horizontal {
+      display: none;
+    }
+
+    .tile {
+      padding: 1px;
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: top .28s ease-out,
+                  bottom .28s ease-out,
+                  left .28s ease-out,
+                  righr .28s ease-out;
+    }
+  }
+}
+
+.button-block {
+  width: 100%;
+}

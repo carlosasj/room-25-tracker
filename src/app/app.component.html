@@ -1,0 +1,83 @@
+<div class="square-container flex flex-xy-center">
+  <div class="text-center" *ngIf="splash; else grid">
+    <h1>Room 25 Tracker</h1>
+    <h2>Track the hidden rooms of the Room 25 game</h2>
+    <h3>Especially useful on the Team Mode</h3>
+    <button type="button" (click)="splash = false">Start</button>
+  </div>
+
+  <ng-template #grid>
+    <div class="board">
+      <div class="arrow-row flex-row">
+        <div class="arrow-empty-space flex-hidden">&nbsp;</div>
+        <div class="arrow-vertical"><button class="button-block"><i class="lnr lnr-chevron-up"></i></button></div>
+        <div class="arrow-vertical"><button class="button-block"><i class="lnr lnr-chevron-up"></i></button></div>
+        <div class="arrow-vertical flex-hidden">&nbsp;</div>
+        <div class="arrow-vertical"><button class="button-block"><i class="lnr lnr-chevron-up"></i></button></div>
+        <div class="arrow-vertical"><button class="button-block"><i class="lnr lnr-chevron-up"></i></button></div>
+        <div class="arrow-empty-space flex-hidden">&nbsp;</div>
+      </div>
+
+      <div class="tiles-row flex-row">
+        <div class="arrow-horizontal"><button class="button-block"><i class="lnr lnr-chevron-left"></i></button></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="arrow-horizontal"><button class="button-block"><i class="lnr lnr-chevron-right"></i></button></div>
+      </div>
+
+      <div class="tiles-row flex-row">
+        <div class="arrow-horizontal"><button class="button-block"><i class="lnr lnr-chevron-left"></i></button></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="arrow-horizontal"><button class="button-block"><i class="lnr lnr-chevron-right"></i></button></div>
+      </div>
+
+      <div class="tiles-row flex-row">
+        <div class="arrow-horizontal flex-hidden">&nbsp;</div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="arrow-horizontal flex-hidden">&nbsp;</div>
+      </div>
+
+      <div class="tiles-row flex-row">
+        <div class="arrow-horizontal"><button class="button-block"><i class="lnr lnr-chevron-left"></i></button></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="arrow-horizontal"><button class="button-block"><i class="lnr lnr-chevron-right"></i></button></div>
+      </div>
+
+      <div class="tiles-row flex-row">
+        <div class="arrow-horizontal"><button class="button-block"><i class="lnr lnr-chevron-left"></i></button></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="arrow-horizontal"><button class="button-block"><i class="lnr lnr-chevron-right"></i></button></div>
+      </div>
+
+      <div class="arrow-row flex-row">
+        <div class="arrow-empty-space flex-hidden">&nbsp;</div>
+        <div class="arrow-vertical"><button class="button-block"><i class="lnr lnr-chevron-down"></i></button></div>
+        <div class="arrow-vertical"><button class="button-block"><i class="lnr lnr-chevron-down"></i></button></div>
+        <div class="arrow-vertical flex-hidden">&nbsp;</div>
+        <div class="arrow-vertical"><button class="button-block"><i class="lnr lnr-chevron-down"></i></button></div>
+        <div class="arrow-vertical"><button class="button-block"><i class="lnr lnr-chevron-down"></i></button></div>
+        <div class="arrow-empty-space flex-hidden">&nbsp;</div>
+      </div>
+    </div>
+  </ng-template>
+</div>
+

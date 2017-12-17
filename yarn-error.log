@@ -1,0 +1,68 @@
+Arguments: 
+  /home/schneider/.nvm/versions/node/v8.8.1/bin/node /home/schneider/.nvm/versions/node/v8.8.1/bin/yarn
+
+PATH: 
+  /home/schneider/.nvm/versions/node/v8.8.1/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/schneider/Android/Sdk/tools:/home/schneider/Android/Sdk/platform-tools:/home/schneider/Android/Sdk/tools:/home/schneider/Android/Sdk/platform-tools:/home/schneider/.gem/ruby/2.3.0/bin:/home/schneider/.config/yarn/global/node_modules/.bin
+
+Yarn version: 
+  1.2.1
+
+Node version: 
+  8.8.1
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "room25-tracker",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build",
+      "lint": "ng lint"
+    },
+    "private": true,
+    "dependencies": {
+      "@angular/animations": "^5.0.0",
+      "@angular/common": "^5.0.0",
+      "@angular/compiler": "^5.0.0",
+      "@angular/core": "^5.0.0",
+      "@angular/forms": "^5.0.0",
+      // "@angular/http": "^5.0.0",
+      "@angular/platform-browser": "^5.0.0",
+      "@angular/platform-browser-dynamic": "^5.0.0",
+      // "@angular/router": "^5.0.0",
+      "@angular/service-worker": "^5.0.0",
+      "core-js": "^2.4.1",
+      "rxjs": "^5.5.2",
+      "zone.js": "^0.8.14"
+    },
+    "devDependencies": {
+      "@angular/cli": "1.5.5",
+      "@angular/compiler-cli": "^5.0.0",
+      "@angular/language-service": "^5.0.0",
+      "@types/node": "~6.0.60",
+      "codelyzer": "^4.0.1",
+      "ts-node": "~3.2.0",
+      "tslint": "~5.7.0",
+      "typescript": "~2.4.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /run/media/schneider/Arquivos/github/room25-tracker/package.json: Unexpected token / in JSON at position 391
+      at JSON.parse (<anonymous>)
+      at /home/schneider/.nvm/versions/node/v8.8.1/lib/node_modules/yarn/lib/cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (/home/schneider/.nvm/versions/node/v8.8.1/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /home/schneider/.nvm/versions/node/v8.8.1/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>
